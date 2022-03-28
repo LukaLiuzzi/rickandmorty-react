@@ -4,7 +4,8 @@ import ShowData from "./components/ShowData";
 
 function App() {
 
-	const [characterName, setCharacterName] = useState('')
+	const lastSearch = localStorage.getItem("lastSearch");
+	const [characterName, setCharacterName] = useState(lastSearch || '')
 	
 	return (
 		<section className="container">

@@ -23,6 +23,7 @@ const Form = ({setCharacterName}) => {
         }
 
         setCharacterName(name.trim().toLowerCase())
+        localStorage.setItem('lastSearch', name.trim().toLowerCase())
 
         reset()
     }
